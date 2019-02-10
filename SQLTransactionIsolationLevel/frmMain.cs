@@ -34,15 +34,8 @@ namespace SQLTransactionIsolationLevel
             ucSerializable.IsolationManager = _serializable;
             ucSerializable.OnSelection += UcSerializable_OnSelection;
             
-            ucUnspecified.IsolationManager = _unspecified;
-            ucUnspecified.OnSelection += UcUnspecified_OnSelection;
         }
-
-        private void UcUnspecified_OnSelection(List<Models.Member> members)
-        {
-            ImportMembers(txtUnspecified, members);
-        }
-
+        
         private void UcSerializable_OnSelection(List<Models.Member> members)
         {
             ImportMembers(txtSerializable, members);

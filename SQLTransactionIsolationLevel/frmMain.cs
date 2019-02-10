@@ -16,7 +16,6 @@ namespace SQLTransactionIsolationLevel
         private readonly IsolationManager _readCommitted = new IsolationManager(IsolationLevel.ReadCommitted);
         private readonly IsolationManager _repeatableRead = new IsolationManager(IsolationLevel.RepeatableRead);
         private readonly IsolationManager _serializable = new IsolationManager(IsolationLevel.Serializable);
-        private readonly IsolationManager _unspecified = new IsolationManager(IsolationLevel.Unspecified);
 
         public frmMain()
         {

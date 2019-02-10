@@ -31,25 +31,21 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.txtUncommited = new System.Windows.Forms.RichTextBox();
-            this.ucUncommitted = new SQLTransactionIsolationLevel.UserControls.CRUD();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.txtCommitted = new System.Windows.Forms.RichTextBox();
-            this.ucCommitted = new SQLTransactionIsolationLevel.UserControls.CRUD();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.txtRepeatable = new System.Windows.Forms.RichTextBox();
-            this.ucRepeatable = new SQLTransactionIsolationLevel.UserControls.CRUD();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.txtSerializable = new System.Windows.Forms.RichTextBox();
+            this.ucUncommitted = new SQLTransactionIsolationLevel.UserControls.CRUD();
+            this.ucCommitted = new SQLTransactionIsolationLevel.UserControls.CRUD();
+            this.ucRepeatable = new SQLTransactionIsolationLevel.UserControls.CRUD();
             this.ucSerializable = new SQLTransactionIsolationLevel.UserControls.CRUD();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.txtUnspecified = new System.Windows.Forms.RichTextBox();
-            this.ucUnspecified = new SQLTransactionIsolationLevel.UserControls.CRUD();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage5.SuspendLayout();
-            this.tabPage7.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -58,7 +54,6 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage5);
-            this.tabControl1.Controls.Add(this.tabPage7);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
@@ -87,15 +82,6 @@
             this.txtUncommited.TabIndex = 0;
             this.txtUncommited.Text = "";
             // 
-            // ucUncommitted
-            // 
-            this.ucUncommitted.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.ucUncommitted.IsolationManager = null;
-            this.ucUncommitted.Location = new System.Drawing.Point(3, 391);
-            this.ucUncommitted.Name = "ucUncommitted";
-            this.ucUncommitted.Size = new System.Drawing.Size(786, 30);
-            this.ucUncommitted.TabIndex = 1;
-            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.txtCommitted);
@@ -117,15 +103,6 @@
             this.txtCommitted.TabIndex = 2;
             this.txtCommitted.Text = "";
             // 
-            // ucCommitted
-            // 
-            this.ucCommitted.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.ucCommitted.IsolationManager = null;
-            this.ucCommitted.Location = new System.Drawing.Point(3, 391);
-            this.ucCommitted.Name = "ucCommitted";
-            this.ucCommitted.Size = new System.Drawing.Size(786, 30);
-            this.ucCommitted.TabIndex = 3;
-            // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.txtRepeatable);
@@ -145,15 +122,6 @@
             this.txtRepeatable.Size = new System.Drawing.Size(792, 394);
             this.txtRepeatable.TabIndex = 2;
             this.txtRepeatable.Text = "";
-            // 
-            // ucRepeatable
-            // 
-            this.ucRepeatable.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.ucRepeatable.IsolationManager = null;
-            this.ucRepeatable.Location = new System.Drawing.Point(0, 394);
-            this.ucRepeatable.Name = "ucRepeatable";
-            this.ucRepeatable.Size = new System.Drawing.Size(792, 30);
-            this.ucRepeatable.TabIndex = 3;
             // 
             // tabPage5
             // 
@@ -175,6 +143,33 @@
             this.txtSerializable.TabIndex = 2;
             this.txtSerializable.Text = "";
             // 
+            // ucUncommitted
+            // 
+            this.ucUncommitted.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.ucUncommitted.IsolationManager = null;
+            this.ucUncommitted.Location = new System.Drawing.Point(3, 391);
+            this.ucUncommitted.Name = "ucUncommitted";
+            this.ucUncommitted.Size = new System.Drawing.Size(786, 30);
+            this.ucUncommitted.TabIndex = 1;
+            // 
+            // ucCommitted
+            // 
+            this.ucCommitted.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.ucCommitted.IsolationManager = null;
+            this.ucCommitted.Location = new System.Drawing.Point(3, 391);
+            this.ucCommitted.Name = "ucCommitted";
+            this.ucCommitted.Size = new System.Drawing.Size(786, 30);
+            this.ucCommitted.TabIndex = 3;
+            // 
+            // ucRepeatable
+            // 
+            this.ucRepeatable.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.ucRepeatable.IsolationManager = null;
+            this.ucRepeatable.Location = new System.Drawing.Point(0, 394);
+            this.ucRepeatable.Name = "ucRepeatable";
+            this.ucRepeatable.Size = new System.Drawing.Size(792, 30);
+            this.ucRepeatable.TabIndex = 3;
+            // 
             // ucSerializable
             // 
             this.ucSerializable.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -183,35 +178,6 @@
             this.ucSerializable.Name = "ucSerializable";
             this.ucSerializable.Size = new System.Drawing.Size(792, 30);
             this.ucSerializable.TabIndex = 3;
-            // 
-            // tabPage7
-            // 
-            this.tabPage7.Controls.Add(this.txtUnspecified);
-            this.tabPage7.Controls.Add(this.ucUnspecified);
-            this.tabPage7.Location = new System.Drawing.Point(4, 22);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(792, 424);
-            this.tabPage7.TabIndex = 6;
-            this.tabPage7.Text = "Unspecified";
-            this.tabPage7.UseVisualStyleBackColor = true;
-            // 
-            // txtUnspecified
-            // 
-            this.txtUnspecified.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtUnspecified.Location = new System.Drawing.Point(0, 0);
-            this.txtUnspecified.Name = "txtUnspecified";
-            this.txtUnspecified.Size = new System.Drawing.Size(792, 394);
-            this.txtUnspecified.TabIndex = 2;
-            this.txtUnspecified.Text = "";
-            // 
-            // ucUnspecified
-            // 
-            this.ucUnspecified.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.ucUnspecified.IsolationManager = null;
-            this.ucUnspecified.Location = new System.Drawing.Point(0, 394);
-            this.ucUnspecified.Name = "ucUnspecified";
-            this.ucUnspecified.Size = new System.Drawing.Size(792, 30);
-            this.ucUnspecified.TabIndex = 3;
             // 
             // frmMain
             // 
@@ -228,7 +194,6 @@
             this.tabPage2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
-            this.tabPage7.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -240,7 +205,6 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.RichTextBox txtUncommited;
         private UserControls.CRUD ucUncommitted;
         private System.Windows.Forms.RichTextBox txtCommitted;
@@ -249,8 +213,6 @@
         private UserControls.CRUD ucRepeatable;
         private System.Windows.Forms.RichTextBox txtSerializable;
         private UserControls.CRUD ucSerializable;
-        private System.Windows.Forms.RichTextBox txtUnspecified;
-        private UserControls.CRUD ucUnspecified;
     }
 }
 
